@@ -1,17 +1,10 @@
-import { useContext } from "react";
 import { useState } from "react";
 import { createContext } from "react";
+import AccordionItem from "./AccordionItem";
+import AccordionHeader from "./AccordionHeader";
+import AccordionDetails from "./AccordionDetails";
 
-const AccordionContext = createContext(null);
-
-export function useAccordionContext() {
-  const context = useContext(AccordionContext);
-  if (!context) {
-    throw new Error("Accordion-related values should be used inside <Accordion> component");
-  }
-
-  return context;
-}
+export const AccordionContext = createContext(null);
 
 export default function Accordion({ children }) {
   const [openItemId, setOpenItemId] = useState("question1");
@@ -31,3 +24,7 @@ export default function Accordion({ children }) {
     </AccordionContext.Provider>
   );
 }
+
+Accordion.Item = AccordionItem;
+Accordion.Header = AccordionHeader;
+Accordion.Details = AccordionDetails;
