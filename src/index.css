@@ -23,7 +23,7 @@
 }
 
 .app-container__top {
-  background-image: url("background-pattern-mobile.svg");
+  background-image: url("/background-pattern-mobile.svg");
   background-repeat: no-repeat;
   background-size: cover;
   height: 230px;
@@ -98,7 +98,7 @@
 
 @media (min-width: 450px) {
   .app-container__top {
-    background-image: url("background-pattern-desktop.svg");
+    background-image: url("/background-pattern-desktop.svg");
     height: 320px;
   }
 
