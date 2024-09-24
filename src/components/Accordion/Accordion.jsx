@@ -3,6 +3,7 @@ import { createContext } from "react";
 import AccordionItem from "./AccordionItem";
 import AccordionHeader from "./AccordionHeader";
 import AccordionDetails from "./AccordionDetails";
+import AccordionSeparator from "./AccordionSeparator";
 
 export const AccordionContext = createContext(null);
 
@@ -28,3 +29,4 @@ export default function Accordion({ children }) {
 Accordion.Item = AccordionItem;
 Accordion.Header = AccordionHeader;
 Accordion.Details = AccordionDetails;
+Accordion.Separator = AccordionSeparator;

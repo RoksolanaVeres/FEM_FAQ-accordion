@@ -44,6 +44,7 @@ export default function App() {
             <Accordion.Item key={faq.id}>
               <AccordionHeader itemId={faq.id}>{faq.question}</AccordionHeader>
               <Accordion.Details itemId={faq.id}>{faq.answer}</Accordion.Details>
+              <Accordion.Separator />
             </Accordion.Item>
           ))}
         </Accordion>
